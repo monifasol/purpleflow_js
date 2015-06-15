@@ -73,7 +73,12 @@ header {
   cursor: pointer;
 }
 .menu {
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
   transform: translateX(-100%);
+  
   transition: all 0.8s 0s;
   background-color: #ee0859;
   position: absolute;
@@ -102,13 +107,18 @@ header {
   }
   .close-menu {
     background: url("../img/close-icon.png") no-repeat 97% 75%;
-    width: 100%;
+    wi 100%;
     height: 40px;
     cursor: pointer;
     visibility: hidden;
   }
   &.is-active {
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
     transform: translateX(0);
+
     transition: all 0.5s 0s;
     .close-menu {
       visibility: visible;
@@ -122,8 +132,13 @@ header {
     background: url("../img/open.png") no-repeat 100% 50%;
   }
   .dropdown-content {
-    margin-left: 20px;
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
+
+    margin-left: 20px;
     opacity: 0;
     max-height: 0;
     transition: all 1s 0s;
@@ -135,6 +150,10 @@ header {
     .dropdown-content {
       opacity: 1;
       max-height: 10em;      
+      -ms-transform: translateX(40px);
+      -webkit-transform: translateX(40px);
+      -moz-transform: translateX(40px);
+      -o-transform: translateX(40px);
       transform: translateX(40px);
       transition: all 1s 0s;
     }  
