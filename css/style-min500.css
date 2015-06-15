@@ -1,0 +1,21 @@
+@media all and (min-width: 500px) {
+  body {
+    font-size: 13px; }
+
+  header .headline {
+    margin: 20px auto;
+    font-size: 60px; }
+  header .description {
+    margin: 20px auto;
+    font-size: 12px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px; }
+
+  .menu {
+    width: 50%; } }
+
+/*# sourceMappingURL=style-min500.css.map */
