@@ -6,19 +6,36 @@
     display: none; }
 
   .dropdown .dropdown-content {
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
     transform: none; }
   .dropdown.is-active .dropdown-content {
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
     transform: none;
     margin-top: 10px;
     text-align: left;
     transition: all 1.3s 0s; }
 
   .menu {
+    visibility: visible;
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
     transform: translateX(0);
-    transition: transform 0.5s 0s;
+    transition: all 0.5s 0s;
     width: 100%;
     height: 58px;
     display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
